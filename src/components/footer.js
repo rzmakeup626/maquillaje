@@ -1,0 +1,82 @@
+"use client";
+
+import React from "react";
+import { FaInstagram, FaFacebookF, FaTiktok } from "react-icons/fa"; // Importamos los iconos
+
+const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-black text-gray-300 py-6">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+        {/* Logo y nombre con botón de inicio */}
+        <div className="flex items-center gap-3">
+          <a href="/" className="bg-[#b8860b] p-2 rounded-full hover:scale-105 transition-transform">
+            <img src="/img/4-sin-fondo.png" alt="Logo" className="h-10 w-10" />
+          </a>
+          <span className="text-lg font-bold tracking-wider">RZ Makeup Artist</span>
+        </div>
+
+        {/* Navegación */}
+        <div className="mt-4 md:mt-0">
+          <ul className="flex gap-4">
+            <li>
+              <a
+                href="/nosotros"
+                className="hover:underline hover:text-white transition-colors"
+              >
+                Nosotros
+              </a>
+            </li>
+            <li>
+              <a
+                href="/servicios"
+                className="hover:underline hover:text-white transition-colors"
+              >
+                Servicios
+              </a>
+            </li>
+            <li>
+              <a
+                href="/blog"
+                className="hover:underline hover:text-white transition-colors"
+              >
+                Blog
+              </a>
+            </li>
+            <li>
+              <a
+                href="/contacto"
+                className="hover:underline hover:text-white transition-colors"
+              >
+                Contacto
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Redes sociales */}
+        <div className="mt-4 md:mt-0 flex gap-4">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-white transition-colors">
+            <FaInstagram />
+          </a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-white transition-colors">
+            <FaFacebookF />
+          </a>
+          <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-white transition-colors">
+            <FaTiktok />
+          </a>
+        </div>
+
+        {/* Derechos reservados */}
+        <div className="mt-4 md:mt-0 text-sm">
+          <p>
+            &copy; {currentYear} Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
