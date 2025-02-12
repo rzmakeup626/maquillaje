@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const phone = "573194587796"; // Número de WhatsApp
 
@@ -16,7 +15,7 @@ const getWhatsAppLink = (message) => {
 };
 
 const HomePage = () => {
-  const [selectedSkinType, setSelectedSkinType] = useState(null);
+
 
   const skinTypes = [
     {
@@ -137,7 +136,7 @@ const HomePage = () => {
           ].map((service, index) => (
             <motion.div
               key={index}
-              className="bg-white text-black p-6 rounded-lg shadow-lg"
+              className="bg-white text-black p-6 rounded-lg shadow-lg relative"
               whileHover={{ scale: 1.05 }}
             >
               <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>

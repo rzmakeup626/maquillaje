@@ -71,7 +71,7 @@ export default function HomePage() {
       </section>
 
       {/* Sección con Mensaje Inspirador */}
-      <section className="py-6 px-4 bg-gradient-to-r from-black via-[#b8860b] to-white text-black text-center">
+      <section className="py-6 px-4 bg-gradient-to-r from-black via-[#b8860b] to-[#b8860b] text-white text-center">
         <motion.div
           className="max-w-5xl mx-auto"
           animate={{ opacity: [0, 1], y: [50, 0] }}

@@ -6,10 +6,11 @@ import { motion } from "framer-motion";
 
 const Navbar = () => {
   const [whatsappMenuVisible, setWhatsAppMenuVisible] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
   const whatsappRef = useRef(null);
-  
+
   const phone = "573116386099"; // Número de WhatsApp
 
   // Función para generar enlaces de WhatsApp dinámicos
@@ -37,13 +38,22 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex items-center justify-between p-4 bg-white text-[#171717]">
+      <nav className="flex items-center justify-between p-4 bg-[#b8860b] text-[#ffffff] shadow-md relative">
         {/* Logo */}
-        <button onClick={() => router.push("/")} className="flex items-center gap-2 cursor-pointer">
-          <div className="bg-[#b8860b] p-2 rounded-full">
-            <img src="/img/4-sin-fondo.png" alt="Logo" className="h-10 w-10 object-contain" />
+        <button
+          onClick={() => router.push("/")}
+          className="flex items-center gap-2 cursor-pointer"
+        >
+          <div className="bg-[#ffffff] p-2 rounded-full">
+            <img
+              src="/img/Logo.png"
+              alt="Logo"
+              className="h-10 w-10 object-contain"
+            />
           </div>
-          <span className="text-xl font-bold tracking-wider">RZ Makeup Artist</span>
+          <span className="text-xl font-bold tracking-wider">
+            RZ Makeup Artist
+          </span>
         </button>
 
         {/* Menú de navegación */}
@@ -54,8 +64,21 @@ const Navbar = () => {
             { path: "/blog", label: "Blog" },
             { path: "/contacto", label: "Contacto" },
           ].map(({ path, label }) => (
-            <motion.li key={path} whileHover={{ scale: 1.1 }} className="hover:underline">
-              <a href={path}>{label}</a>
+            <motion.li
+              key={path}
+              whileHover={{ scale: 1.1 }}
+              className="hover:underline"
+            >
+              <a
+                href={path}
+                className={`transition duration-300 text-lg ${
+                  router.pathname === path
+                    ? "text-[#171717]"
+                    : "text-white hover:text-[#171717]"
+                }`}
+              >
+                {label}
+              </a>
             </motion.li>
           ))}
         </ul>
@@ -63,15 +86,41 @@ const Navbar = () => {
         {/* Botón Reserva tu Cita */}
         <div className="hidden md:block">
           <button
-            className="px-4 py-2 rounded-2xl text-[#b8860b] border border-[#b8860b] bg-white hover:bg-[#b8860b] hover:text-white transition-all duration-300"
+            className="px-4 py-2 rounded-2xl text-[#b8860b] border border-[#b8860b] bg-white hover:bg-[#171717] hover:text-white transition-all duration-300"
             onClick={() => router.push("/contacto")}
             disabled={pathname === "/contacto"}
           >
             Reserva tu Cita
           </button>
         </div>
-      </nav>
 
+        {/* Botón menú móvil */}
+        <button
+          className="md:hidden text-[#ffffff] text-2xl"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          ☰
+        </button>
+      </nav>
+      {/* Menú desplegable móvil */}
+      {menuOpen && (
+        <div className="md:hidden absolute top-16 left-0 w-full bg-gradient-to-b from-black to-gray-900 shadow-lg p-6 flex flex-col items-center gap-6 z-50 transition-all duration-300">
+          {[
+            { path: "/nosotros", label: "Nosotros" },
+            { path: "/servicios", label: "Servicios" },
+            { path: "/blog", label: "Blog" },
+            { path: "/contacto", label: "Contacto" },
+          ].map(({ path, label }) => (
+            <a
+              key={path}
+              href={path}
+              className="text-xl font-semibold text-white tracking-wide hover:text-[#ffffff] transition duration-300"
+            >
+              {label}
+            </a>
+          ))}
+        </div>
+      )}{" "}
       {/* Botón flotante de WhatsApp */}
       <div className="fixed bottom-6 right-6 z-50">
         <div
@@ -91,36 +140,67 @@ const Navbar = () => {
 
         {/* Menú desplegable de WhatsApp */}
         {whatsappMenuVisible && (
-          <div ref={whatsappRef} className="fixed bottom-20 right-6 bg-white text-black rounded-lg shadow-lg p-4 z-50 w-64">
+          <div
+            ref={whatsappRef}
+            className="fixed bottom-20 right-6 bg-white text-black rounded-lg shadow-lg p-4 z-50 w-64"
+          >
             <p className="font-bold mb-2">¿En qué podemos ayudarte?</p>
             <ul>
               <li className="mb-2">
-                <a href={getWhatsAppLink("Hola, quiero información sobre sus servicios de maquillaje.")}
-                  target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                <a
+                  href={getWhatsAppLink(
+                    "Hola, quiero información sobre sus servicios de maquillaje."
+                  )}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
                   💄 Información sobre servicios
                 </a>
               </li>
               <li className="mb-2">
-                <a href={getWhatsAppLink("Quisiera conocer sus promociones actuales.")}
-                  target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                <a
+                  href={getWhatsAppLink(
+                    "Quisiera conocer sus promociones actuales."
+                  )}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
                   🎉 realizan asesoria para ver que maquillaje usar
                 </a>
               </li>
               <li className="mb-2">
-                <a href={getWhatsAppLink("Me gustaría reservar una cita para maquillaje profesional.")}
-                  target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                <a
+                  href={getWhatsAppLink(
+                    "Me gustaría reservar una cita para maquillaje profesional."
+                  )}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
                   📅 Reservar una cita
                 </a>
               </li>
               <li className="mb-2">
-                <a href={getWhatsAppLink("¿Cuáles son sus horarios de atención?")}
-                  target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                <a
+                  href={getWhatsAppLink(
+                    "¿Cuáles son sus horarios de atención?"
+                  )}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
                   ⏰ Horarios de atención
                 </a>
               </li>
               <li className="mb-2">
-                <a href={getWhatsAppLink("¿Dónde están ubicados?")}
-                  target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
+                <a
+                  href={getWhatsAppLink("¿Dónde están ubicados?")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
                   📍 Ubicación del estudio
                 </a>
               </li>
