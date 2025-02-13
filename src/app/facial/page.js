@@ -9,7 +9,7 @@ const CuidadoFacial = () => {
   return (
     <>
       <Navbar />
-      <div className="max-w-4xl mx-auto p-6 rounded-lg shadow-lg">
+      <div className="bg-white min-h-screen max-w-4xl mx-auto p-6 rounded-lg shadow-lg">
         <h1 className="text-4xl font-semibold text-center bg-gradient-to-r from-yellow-600 to-yellow-400 text-transparent bg-clip-text mb-6 p-4 rounded-md">
           Bases de Maquillaje Profesional
         </h1>

@@ -63,7 +63,7 @@ function AboutContacto() {
   return (
     <>
       <Navbar />
-      <section className="py-16 px-4">
+      <section className="bg-white min-h-screen py-16 px-4">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-4xl font-semibold text-black">Contáctanos</h2>
           <form

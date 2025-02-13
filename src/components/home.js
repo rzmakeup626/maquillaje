@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const phone = "573194587796"; // Número de WhatsApp
+const phone = "573116386099"; // Número de WhatsApp
 
 // Función para generar enlaces de WhatsApp dinámicos
 const getWhatsAppLink = (message) => {
