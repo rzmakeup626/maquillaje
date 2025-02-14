@@ -113,10 +113,10 @@ const HomePage = () => {
               title: "Maquillaje Social",
               desc: "Look natural, accesible y sofisticado para eventos especiales como graduaciones, fiestas, bodas o para el día a día. Maquillaje de larga duración que realza tu estilo y personalidad.",
             },
-            {
-              title: "Maquillaje de Noche",
-              desc: "Luce impactante y glamurosa con un maquillaje diseñado para resaltar bajo luces nocturnas. Utilizamos técnicas avanzadas para intensificar tu mirada, esculpir tu rostro y garantizar un acabado impecable que dure toda la velada.",
-            },
+            //{
+            //  title: "Maquillaje de Noche",
+            //  desc: "Luce impactante y glamurosa con un maquillaje diseñado para resaltar bajo luces nocturnas. Utilizamos técnicas avanzadas para intensificar tu mirada, esculpir tu rostro y garantizar un acabado impecable que dure toda la velada.",
+            //},
             {
               title: "Maquillaje para Novias",
               desc: "Para el día más importante de tu vida, necesitas un maquillaje que refleje tu esencia y resista cada emoción. Diseñamos un look elegante y atemporal, con productos de alta duración y técnicas profesionales que te harán brillar con luz propia.",
@@ -125,13 +125,13 @@ const HomePage = () => {
               title: "Maquillaje para Hombres",
               desc: "Un toque sutil pero efectivo para perfeccionar tu apariencia sin exceso de producto. Ideal para sesiones fotográficas, eventos profesionales o televisión, este servicio equilibra el tono de la piel, reduce brillos y oculta imperfecciones con un acabado natural y fresco.",
             },
-            {
-              title: "Maquillaje para Fotografía",
-              desc: "Potencia tu imagen ante las cámaras con un maquillaje diseñado para capturar cada detalle a la perfección. Evitamos reflejos no deseados y realzamos tus facciones con un acabado profesional que luce impecable en cualquier iluminación.",
-            },
+            //{
+            //  title: "Maquillaje para Fotografía",
+            //  desc: "Potencia tu imagen ante las cámaras con un maquillaje diseñado para capturar cada detalle a la perfección. Evitamos reflejos no deseados y realzamos tus facciones con un acabado profesional que luce impecable en cualquier iluminación.",
+            //},
             {
               title: "Asesoría personalizada Automaquillaje",
-              desc: "Descubre los secretos del maquillaje profesional con una asesoría adaptada a tus necesidades. Aprende desde las bases hasta técnicas avanzadas, con clases especializadas para el día a día o eventos especiales. Analizamos tu tipo de piel, rasgos y colores ideales para que logres un look impecable por ti misma.",
+              desc: "Aprende desde las bases hasta técnicas avanzadas, con clases especializadas para el día a día o eventos especiales. Analizamos tu tipo de piel, rasgos y colores ideales para que logres un look impecable por ti misma.",
             },
           ].map((service, index) => (
             <motion.div

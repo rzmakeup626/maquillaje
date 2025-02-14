@@ -76,6 +76,10 @@ const PestañasVolumenAlargamiento = () => {
               Desmaquilla tus pestañas con suavidad para evitar quiebres y mantenerlas saludables.
             </li>
           </ul>
+          <p className="text-[#b8860b] text-lg font-semibold mt-4">
+           Marcas de nuestros Productos
+          </p>
+          <p>Essence, Dúo verde, Ruby Rose.</p>
         </div>
       </div>
       <Footer />

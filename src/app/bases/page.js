@@ -60,6 +60,10 @@ const BasesMaquillaje = () => {
             Para probar la base, aplícala cerca de la mejilla y el cuello, difuminando bien. El tono que desaparezca por
             completo y coincida con tu subtono será el ideal.
           </p>
+          <p className="text-[#b8860b] text-lg font-semibold mt-4">
+           Marcas de nuestros Productos
+          </p>
+          <p>Milani, Atenea.</p>
         </div>
       </div>
       <Footer />

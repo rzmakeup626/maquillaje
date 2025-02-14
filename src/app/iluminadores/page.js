@@ -80,6 +80,10 @@ const Iluminadores = () => {
               claras, dorado para medias y bronce para oscuras.
             </li>
           </ul>
+          <p className="text-[#b8860b] text-lg font-semibold mt-4">
+           Marcas de nuestros Productos
+          </p>
+          <p>Atenea, Mac.</p>
         </div>
       </div>
       <Footer />

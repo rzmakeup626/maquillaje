@@ -80,6 +80,11 @@ const Rubores = () => {
               las mejillas.
             </li>
           </ul>
+          <p className="text-[#b8860b] text-lg font-semibold mt-4">
+           Marcas de nuestros Productos
+          </p>
+          <p>Atenea, Mac</p>
+          <p>Polvos: Montoc, Ruby rose.</p>
         </div>
       </div>
       <Footer />

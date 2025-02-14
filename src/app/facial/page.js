@@ -70,6 +70,10 @@ const CuidadoFacial = () => {
             que desaparezca por completo y coincida con tu subtono será el
             ideal.
           </p>
+          <p className="text-[#b8860b] text-lg font-semibold mt-4">
+           Marcas de nuestros Productos
+          </p>
+          <p>Renud, Nivea, Bioderma, Avene, Bio-Oil, Montoc.</p>
         </div>
       </div>
       <Footer />

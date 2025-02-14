@@ -39,7 +39,7 @@ const serviciosMujeres = [
     imagen: "/img/Maquillaje_natural.png",
   },
   {
-    nombre: "Clases de Auto Maquillaje",
+    nombre: "Clases de Automaquillaje",
     descripcion:
       "Conócete a ti misma con un análisis detallado de tu rostro. Aprenderás técnicas de aplicación desde lo básico hasta lo avanzado, incluyendo maquillaje para el día a día y eventos especiales asegurando un estilo impecable.",
     imagen: "/img/Clases_auto-maquillaje.png",

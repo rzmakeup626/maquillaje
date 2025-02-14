@@ -63,6 +63,10 @@ const Labiales = () => {
             <li>Aplica el labial con brocha para mayor precisión y duración.</li>
             <li>Para un efecto más voluminoso, añade un toque de brillo en el centro de los labios.</li>
           </ul>
+          <p className="text-[#b8860b] text-lg font-semibold mt-4">
+           Marcas de nuestros Productos
+          </p>
+          <p>Ame, Catrice, essence, atenea, L.A Girl.</p>
         </div>
       </div>
       <Footer />

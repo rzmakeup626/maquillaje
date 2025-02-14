@@ -63,6 +63,10 @@ const Sombras = () => {
             <li>Elige tonos neutros para un look diario y colores vibrantes para ocasiones especiales.</li>
             <li>Aplica tonos más claros en el lagrimal y oscuros en la cuenca para profundidad.</li>
           </ul>
+          <p className="text-[#b8860b] text-lg font-semibold mt-4">
+           Marcas de nuestros Productos
+          </p>
+          <p>Atenea, Beauty glazed.</p>
         </div>
       </div>
       <Footer />

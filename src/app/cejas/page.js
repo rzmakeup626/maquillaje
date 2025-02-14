@@ -42,12 +42,7 @@ const CejasPerfectas = () => {
             <li>
               <strong>Depilación con pinza:</strong> Ideal para definir la forma con precisión.
             </li>
-            <li>
-              <strong>Depilación con hilo:</strong> Técnica precisa y menos agresiva para la piel.
-            </li>
-            <li>
-              <strong>Microblading:</strong> Procedimiento semipermanente para cejas más definidas y naturales.
-            </li>
+          
             <li>
               <strong>Maquillaje de cejas:</strong> Uso de lápices, sombras o geles para rellenar y dar forma.
             </li>
@@ -76,6 +71,10 @@ const CejasPerfectas = () => {
               Hidrata y cuida tus cejas con aceites naturales para fortalecer los vellos.
             </li>
           </ul>
+          <p className="text-[#b8860b] text-lg font-semibold mt-4">
+           Marcas de nuestros Productos
+          </p>
+          <p>Atenea.</p>
         </div>
       </div>
       <Footer />
