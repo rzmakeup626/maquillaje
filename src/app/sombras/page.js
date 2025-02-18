@@ -66,7 +66,7 @@ const Sombras = () => {
           <p className="text-[#b8860b] text-lg font-semibold mt-4">
            Marcas de nuestros Productos
           </p>
-          <p>Atenea, Beauty glazed.</p>
+          <p  className="text-black">Atenea, Beauty glazed.</p>
         </div>
       </div>
       <Footer />

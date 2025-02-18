@@ -73,7 +73,7 @@ const CuidadoFacial = () => {
           <p className="text-[#b8860b] text-lg font-semibold mt-4">
            Marcas de nuestros Productos
           </p>
-          <p>Renud, Nivea, Bioderma, Avene, Bio-Oil, Montoc.</p>
+          <p  className="text-black">Renud, Nivea, Bioderma, Avene, Bio-Oil, Montoc.</p>
         </div>
       </div>
       <Footer />

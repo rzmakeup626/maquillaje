@@ -66,7 +66,7 @@ const Labiales = () => {
           <p className="text-[#b8860b] text-lg font-semibold mt-4">
            Marcas de nuestros Productos
           </p>
-          <p>Ame, Catrice, essence, atenea, L.A Girl.</p>
+          <p  className="text-black">Ame, Catrice, essence, atenea, L.A Girl.</p>
         </div>
       </div>
       <Footer />

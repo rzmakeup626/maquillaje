@@ -79,7 +79,7 @@ const PestañasVolumenAlargamiento = () => {
           <p className="text-[#b8860b] text-lg font-semibold mt-4">
            Marcas de nuestros Productos
           </p>
-          <p>Essence, Dúo verde, Ruby Rose.</p>
+          <p  className="text-black">Essence, Dúo verde, Ruby Rose.</p>
         </div>
       </div>
       <Footer />
