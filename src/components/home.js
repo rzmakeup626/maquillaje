@@ -15,8 +15,6 @@ const getWhatsAppLink = (message) => {
 };
 
 const HomePage = () => {
-
-
   const skinTypes = [
     {
       id: 1,
@@ -107,7 +105,7 @@ const HomePage = () => {
           bodas y eventos formales, creamos un look de larga duración que
           armoniza con tu estilo, vestimenta y personalidad
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
           {[
             {
               title: "Maquillaje Social",
@@ -160,6 +158,21 @@ const HomePage = () => {
           tenemos para ti!
         </p>
       </section>
+      <div className="mt-8 bg-[#b8860b] text-center p-6 rounded-lg">
+      <p className="text-3xl text-white font-semibold mb-4">
+  Reseña de los productos que usamos
+</p>
+
+        <p className="text-lg text-black font-semibold">
+          Como maquilladores profesionales en RZ Makeup Artist, ofrecemos
+          productos de excelente calidad, completamente originales y formulados
+          para adaptarse a todo tipo de piel, ya sea seca, grasa, sensible o
+          mixta. Estos productos están creados para cuidar, proteger y realzar
+          la belleza de tu piel de forma eficaz, proporcionando opciones que no
+          solo cumplen con los más altos estándares de calidad, sino que también
+          están diseñadas para brindar resultados visibles y duraderos.
+        </p>
+      </div>
     </div>
   );
 };
